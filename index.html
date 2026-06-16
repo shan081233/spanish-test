@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>西語學習網站</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>🇪🇸 西語學習網站</h1>
+
+  <section>
+    <h2>📚 常用單字</h2>
+
+    <div class="word" onclick="speak('hola')">
+      hola = 你好
+    </div>
+
+    <div class="word" onclick="speak('gracias')">
+      gracias = 謝謝
+    </div>
+
+    <div class="word" onclick="speak('adiós')">
+      adiós = 再見
+    </div>
+  </section>
+
+  <section>
+    <h2>🧠 小測驗</h2>
+    <p>「謝謝」的西語是？</p>
+    <button onclick="checkAnswer('a')">hola</button>
+    <button onclick="checkAnswer('b')">gracias</button>
+    <button onclick="checkAnswer('c')">adiós</button>
+
+    <p id="result"></p>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
